@@ -23,7 +23,7 @@ case "$1" in
   stop)
     echo "Stopping App Server"
     # kill application you want to stop
-    killall noip2
+    killall SocketMain.py
     ;;
   *)
     sudo nohup python36 /var/AWSappserver/SocketMain.py &> /tmp/nohup.out
