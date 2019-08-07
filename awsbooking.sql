@@ -27,6 +27,8 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `bookings`
 --
+CREATE USER `user`@`%` IDENTIFIED BY 'root';
+GRANT ALL PRIVILEGES ON awsbooking.* TO `user`@`%`;
 
 CREATE TABLE `bookings` (
   `activity` varchar(25) NOT NULL,
