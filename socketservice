@@ -26,10 +26,8 @@ case "$1" in
     killall SocketMain.py
     ;;
   *)
-    echo "Starting the App Server"
-    python36 /var/AWSappserver/SocketMain.py
+    echo "Usage: /etc/init.d/socketservice {start|stop}"
+    exit 1
     ;;
-    ;;
-esac
 
 exit 0
