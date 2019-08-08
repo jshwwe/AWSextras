@@ -11,10 +11,9 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+
 CREATE USER `backup`@`%` IDENTIFIED BY 'backup';
 GRANT ALL PRIVILEGES ON awsbooking.* TO `backup`@`%`;
-
-CREATE DATABASE awsbooking;
  
 COMMIT;
 
