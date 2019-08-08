@@ -18,7 +18,7 @@ case "$1" in
   start)
     echo "Starting App Server"
     # run application you want to start
-    sudo nohup -u python36 /var/AWSappserver/SocketMain.py &> /tmp/nohup.out 
+    sudo nohup python36 -u /var/AWSappserver/SocketMain.py &> /tmp/nohup.out 
     ;;
   stop)
     echo "Stopping App Server"
@@ -26,7 +26,7 @@ case "$1" in
     killall SocketMain.py
     ;;
   *)
-    sudo nohup -u python36 /var/AWSappserver/SocketMain.py &> /tmp/nohup.out
+    sudo nohup python36 -u /var/AWSappserver/SocketMain.py &> /tmp/nohup.out
     ;;
 esac
 
