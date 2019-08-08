@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-echo "You are currently served by Web Server B";
+echo "You are currently served by Web Server A";
 
 $time = $_SERVER['REQUEST_TIME'];
 
