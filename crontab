@@ -12,3 +12,4 @@ HOME=/
 # |  |  |  |  |
 # *  *  *  *  * user-name command to be executed
 * * * * * root mysqldump -u root awsbooking | mysql -u user -p'root' -h 10.0.1.52 awsbooking
+
